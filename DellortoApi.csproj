@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Report\GrnGoodBadReport.vsrepx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Report\GrnGoodBadReport.vsrepx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Reporting.Core" Version="21.2.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Report\GrnGoodBadReport.cs">
+      <DependentUpon>GrnGoodBadReport.vsrepx</DependentUpon>
+    </Compile>
+    <Compile Update="Report\GrnGoodBadReport.Designer.cs">
+      <DependentUpon>GrnGoodBadReport.vsrepx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+</Project>

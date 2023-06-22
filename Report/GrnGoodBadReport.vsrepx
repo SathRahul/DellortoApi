@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="21.2.6.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="XtraReport1" Margins="0, 0, 0, 0" PaperKind="Custom" PageWidth="300" PageHeight="67" Version="21.2" DataMember="Query" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Extensions>
+    <Item1 Ref="2" Key="VSReportExtInfo" Value=".vsrepx" />
+  </Extensions>
+  <Bands>
+    <Item1 Ref="3" ControlType="TopMarginBand" Name="TopMargin" HeightF="0" />
+    <Item2 Ref="4" ControlType="BottomMarginBand" Name="BottomMargin" HeightF="0" />
+    <Item3 Ref="5" ControlType="DetailBand" Name="Detail" HeightF="67" TextAlignment="MiddleCenter">
+      <MultiColumn Ref="6" ColumnCount="2" Mode="UseColumnCount" />
+      <Controls>
+        <Item1 Ref="7" ControlType="XRPanel" Name="panel1" SizeF="150,67" LocationFloat="0,0">
+          <Controls>
+            <Item1 Ref="8" ControlType="XRLabel" Name="label4" Multiline="true" Text="label4" SizeF="68,17" LocationFloat="36,49" Font="Arial, 8pt, style=Bold" Padding="2,2,0,0,100" BorderColor="Gray" Borders="All">
+              <ExpressionBindings>
+                <Item1 Ref="9" EventName="BeforePrint" PropertyName="Text" Expression="Iif([ok_reject]=='OK','OK' ,'REJ' )" />
+              </ExpressionBindings>
+              <StylePriority Ref="10" UseFont="false" UseBorderColor="false" UseBorders="false" />
+            </Item1>
+            <Item2 Ref="11" ControlType="XRLabel" Name="label3" Multiline="true" Text="label3" TextAlignment="MiddleCenter" SizeF="93,16" LocationFloat="24.46172,32.9999962" Font="Arial, 8pt, style=Bold" Padding="2,2,0,0,100">
+              <ExpressionBindings>
+                <Item1 Ref="12" EventName="BeforePrint" PropertyName="Text" Expression="[qty]" />
+              </ExpressionBindings>
+              <StylePriority Ref="13" UseFont="false" UseTextAlignment="false" />
+            </Item2>
+            <Item3 Ref="14" ControlType="XRLabel" Name="label2" Multiline="true" Text="label2" SizeF="93,17" LocationFloat="24.46172,15.9999971" Font="Arial, 8pt, style=Bold" Padding="2,2,0,0,100">
+              <ExpressionBindings>
+                <Item1 Ref="15" EventName="BeforePrint" PropertyName="Text" Expression="[mrn_lot_no]" />
+              </ExpressionBindings>
+              <StylePriority Ref="16" UseFont="false" />
+            </Item3>
+            <Item4 Ref="17" ControlType="XRLabel" Name="label1" Multiline="true" Text="label1" SizeF="93,16" LocationFloat="24.46172,0" Font="Arial, 8pt, style=Bold" Padding="2,2,0,0,100">
+              <ExpressionBindings>
+                <Item1 Ref="18" EventName="BeforePrint" PropertyName="Text" Expression="[vendor_invoice_date]" />
+              </ExpressionBindings>
+              <StylePriority Ref="19" UseFont="false" />
+            </Item4>
+          </Controls>
+        </Item1>
+      </Controls>
+      <StylePriority Ref="20" UseTextAlignment="false" />
+    </Item3>
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v21.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9ImxvY2FsaG9zdF9kZWxsb3J0b19kZXYmI3hBO19Db25uZWN0aW9uIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJDdXN0b21TcWxRdWVyeSIgTmFtZT0iUXVlcnkiPjxTcWw+c2VsZWN0ICcnIGFzIHZlbmRvcl9pbnZvaWNlX2RhdGUsJycgYXMgbXJuX2xvdF9ubywwIGFzIHF0eSwnJyBhcyBva19yZWplY3QNCi0tc2VsZWN0ICcxNi0wNi0yMDIzJyBhcyB2ZW5kb3JfaW52b2ljZV9kYXRlLCdMb3QxJyBhcyBtcm5fbG90X25vLA0KLS0yIGFzIHF0eSwnT2sxJyBhcyBva19yZWplY3QgZnJvbSByZWNsYXNzX2xpbmVzPC9TcWw+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2UxIj48VmlldyBOYW1lPSJRdWVyeSI+PEZpZWxkIE5hbWU9InZlbmRvcl9pbnZvaWNlX2RhdGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0ibXJuX2xvdF9ubyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJxdHkiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJva19yZWplY3QiIFR5cGU9IlN0cmluZyIgLz48L1ZpZXc+PC9EYXRhU2V0PjwvUmVzdWx0U2NoZW1hPjxDb25uZWN0aW9uT3B0aW9ucyBDbG9zZUNvbm5lY3Rpb249InRydWUiIC8+PC9TcWxEYXRhU291cmNlPg==" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>
